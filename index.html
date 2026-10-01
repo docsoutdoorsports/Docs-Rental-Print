@@ -169,8 +169,9 @@ document.getElementById("type").textContent =
 document.getElementById("helmet").textContent =
     params.get("helmet") || "";
 
+const total = params.get("total");
 document.getElementById("total").textContent =
-    params.get("total") || "";
+    total ? "$" + Number(total).toFixed(2) : "";
 </script>
 
 </body>
