@@ -172,6 +172,9 @@ document.getElementById("helmet").textContent =
 const total = params.get("total");
 document.getElementById("total").textContent =
     total ? "$" + Number(total).toFixed(2) : "";
+    window.addEventListener("load", function() {
+    setTimeout(() => window.print(), 500);
+});
 </script>
 
 </body>
